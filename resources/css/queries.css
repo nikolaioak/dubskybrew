@@ -34,6 +34,11 @@
         font-size: 150%;
     }
 
+    .icon-small {
+        width: 16px;
+        margin-right: 10px;
+    }
+
     .btn-full:link,
     .btn-full:visited {
         margin-right: 10px;
@@ -82,8 +87,13 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
     
     .main-nav {
+        display: none;
         float: left;
         margin-top: 35px;
         margin-left: 25px;

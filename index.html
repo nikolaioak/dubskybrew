@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
@@ -17,21 +16,26 @@
         <header>
             <nav>
                 <div class="row">
-                    <img src="./resources/img/DBC.png" alt="DBC Logo" class="logo-color logo">
-                    <ul class="main-nav js--main-nav">
+                    <img src="./resources/img/DBC.png" alt="DBC Logo" class="logo">
+                    <img src="./resources/img/DBC.png" alt="DBC Logo" class="logo-color">
+                    <ul class="main-nav js--main-nav" id="js--main-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./flavors.html">Flavors</a></li>
                         <li><a href="./events.html">Events</a></li>
                         <li><a href="./jobs.html">Jobs</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon" id="js--nav-icon">
+                        <button class="nav-menu js--menu js--show" id="js--menu"><i class="ion-ios-arrow-back"></i></button>
+                        <button class="nav-menu js--close js--hide" id="js--close"><i class="ion-ios-arrow-forward"></i></button>
+                    </a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Dubsky Brewing Company</h1><br><h3>Beer made by oak.</h3><br><br>
             </div>
         </header>
-        <footer>
+        <footer class="js--section-features">
             <div class="row"></div>
             <div class="row">
                 <p>
@@ -39,8 +43,13 @@
                 </p>
             </div>
         </footer>
-        <script>
-            require('./index.js')
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+        <script src="./resources/vendors/js/respond.min.js"></script>
+        <script src="./resources/vendors/js/html5shiv.min.js"></script>
+        <script src="./resources/vendors/js/selectivizr.js"></script>
+        <script src="./resources/vendors/js/jquery.waypoints.min.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

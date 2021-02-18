@@ -259,7 +259,6 @@ header {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    user-select:none;
 }
 
 .hero-text-box h3 {
@@ -281,17 +280,11 @@ header {
     margin: 5px 0;
 }
 
-nav {
-    user-select:none; 
-    -webkit-app-region:drag;
-}
-
 /* Main navi */
 .main-nav {
     float: right;
     list-style: none;
     margin-top: 45px;
-    -webkit-app-region:no-drag;
 }
 
 .main-nav li {
@@ -368,6 +361,14 @@ a object {
 
 .section-plans {
     background-color: #fff;
+}
+
+.js--hide {
+    display: none !important;
+}
+
+.js--show {
+    display: block !important;
 }
 
 /* -------------------------------------------------- */

@@ -355,20 +355,20 @@ header {
     width: auto;
 }
 
-a object {
-    pointer-events: none;
+.js--menu {
+    font-size: 100%;
+    background: none;
+    border: none;
+    color: #78bbd6;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
 }
 
-.section-plans {
-    background-color: #fff;
-}
-
-.js--hide {
-    display: none !important;
-}
-
-.js--show {
-    display: block !important;
+i {
+    height: 20px;
+    z-index: 9999;
 }
 
 /* -------------------------------------------------- */
@@ -405,32 +405,18 @@ footer {
     font-size: 80%;
 }
 
-.footer-nav {
+.social-links {
     list-style: none;
-    float: left;
+    float: right;
 }
 
-.footer-nav li {
+.social-links li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.footer-nav li:last-child {
+.social-links li:last-child {
     margin-right: 0;
-}
-
-.footer-nav li a:link,
-.footer-nav li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #888;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.footer-nav li a:hover,
-.footer-nav li a:active {
-    color: #fff;
 }
 
 footer p {

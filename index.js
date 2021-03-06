@@ -18,10 +18,10 @@ $(document).ready(function() {
         
         nav.slideToggle(200)
         
-        if (menu.children[0].classList.contains('ion-android-menu')) {
-            menu.innerHTML = '<i class="ion-close"></i>'
+        if (menu.children[0].classList.contains('menu')) {
+            menu.innerHTML = '<span class="close">&times;</span>'
         } else {
-            menu.innerHTML = '<i class="ion-android-menu"></i>'
+            menu.innerHTML = '<span class="menu">&#9776;</span>'
         }
     })
 
